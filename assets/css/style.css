@@ -37,7 +37,6 @@
 }
 
 .navbar ul li{
-	font-family: century;
 	font-size: 1.1rem;
 	font-weight: bold;
 }
@@ -51,6 +50,10 @@
 }
 
 .navbar ul li a:hover{
+	color: #af4804;
+}
+
+.navbar .current a{
 	color: #af4804;
 }
 
@@ -85,7 +88,7 @@ button{
 
 .button{
 	display: flex;
-    background-color: #359797;
+    background-color: #83b49b;
     color: #FFF;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -104,7 +107,7 @@ button{
 }
 
 .button:hover{
-	background-color: #359797cc;
+	background-color: #83b49bcc;
 }
 
 
@@ -113,6 +116,20 @@ button{
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
     padding: 2rem 0 4rem;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  	justify-content: center;
+  	position: relative;
+  	align-items: center;
+  	margin: 1rem auto;
+}
+
+.flex div {
+  padding: 1em;
 }
 
 /*==================== MAIN IMAGE ====================*/
@@ -127,3 +144,23 @@ img{
 	width: 100%;
   	height: auto;
 }
+
+/*==================== FOOTER ====================*/
+
+.socials p{
+	display: inline-block;
+	text-align: center;
+	white-space: pre-wrap;
+	margin-left: auto;
+}
+.socials a{
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	padding: 50px 0px;
+	color: #6d6c6b;
+}
+
+
+
+
