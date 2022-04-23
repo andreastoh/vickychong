@@ -1,0 +1,129 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #f0d7c7;
+}
+
+
+/* Header */
+.header a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 3rem;
+	padding-top: 2rem;
+  	margin: 0.5rem auto;
+  	color: #bc8c3d;
+  	font-family: 'Cormorant Garamond', serif;
+}
+
+/* Navbar */
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 10px 0px;
+}
+
+.navbar ul li{
+	font-family: century;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #6d6c6b;
+	padding: 8px 25px;
+	font-family: 'Cormorant Garamond', serif;
+
+}
+
+.navbar ul li a:hover{
+	color: #af4804;
+}
+
+.pagedivider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6d6c6b66;
+}
+
+/* Home Section */
+#home{
+	display: flex;
+	flex-direction: column;
+}
+#home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/*==================== BUTTONS ====================*/
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+
+.button{
+	display: flex;
+    background-color: #359797;
+    color: #FFF;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 10px 35px;
+	outline: none;
+	border: none;
+	justify-content: center;
+  	position: relative;
+  	align-items: center;
+  	margin: 1rem auto;
+  	transition: background-color 1s;
+}
+
+.button:hover{
+	background-color: #359797cc;
+}
+
+
+
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section{
+    padding: 2rem 0 4rem;
+}
+
+/*==================== MAIN IMAGE ====================*/
+.main__image{
+	justify-content: center;
+	position: relative;
+  	align-items: center;
+  	margin: 1rem auto;
+}
+
+img{
+	width: 100%;
+  	height: auto;
+}
