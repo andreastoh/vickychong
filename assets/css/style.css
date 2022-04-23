@@ -15,7 +15,7 @@
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	padding-top: 2rem;
   	margin: 0.5rem auto;
   	color: #bc8c3d;
@@ -37,7 +37,7 @@
 }
 
 .navbar ul li{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: bold;
 }
 
