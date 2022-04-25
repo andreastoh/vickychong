@@ -56,8 +56,16 @@
 	color: #af4804;
 }
 
+
 .pagedivider {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6d6c6b66;
+}
+
+.pagedividersmall {
+	display: none;
 	justify-content: center;
 	align-items: center;
 	color: #6d6c6b66;
@@ -132,8 +140,7 @@ button{
 }
 
 .container{
-	width: 40rem;
-		justify-content: center;
+	justify-content: center;
 	position: relative;
   	align-items: center;
   	margin: 1rem auto;
@@ -141,6 +148,16 @@ button{
     height: auto;    
     overflow: hidden;
     text-align: center;
+}
+
+.responsive{
+	width: 644px;
+	height: 500px;
+}
+
+.facebook{
+	width: 644px;
+	height: 658px;
 }
 
 /*==================== MAIN IMAGE ====================*/
@@ -160,8 +177,6 @@ button{
     max-height: 100%;
     vertical-align: middle;
 }
-
-/*==================== MAIN IMAGE ====================*/
 
 
 .home__description{
@@ -217,6 +232,7 @@ button{
   display: table;
 }
 
+
 /*==================== FOOTER ====================*/
 
 .socials p{
@@ -233,6 +249,155 @@ button{
 	color: #6d6c6b;
 }
 
+@media (max-width: 768px){
 
+/* Header */
+.header a{
+	font-size: 2.5rem;
+	padding-top: 0rem;
+  	margin: 0 auto;
+}
+
+/* Navbar */
+
+.navbar ul{
+	margin: 5px 0px;
+}
+
+.navbar ul li{
+	font-size: 1rem;
+}
+
+.navbar ul li a{
+	padding: 4px 14px;
+}
+
+
+.button{
+    border-radius: 0.5rem;
+	font-size: 1rem;
+	padding: 10px 17px;
+  	margin: 0.5rem auto;
+}
+
+.icon img{
+	justify-content: center;
+	position: relative;
+  	align-items: center;
+  	margin: 0rem auto;
+  	width: 6rem;
+    height: auto;    
+    overflow: hidden;
+    text-align: center;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section{
+    padding: 1rem 0 2rem;
+}
+
+
+.flex {
+  	margin: 1rem auto;
+}
+
+.flex div {
+  padding: 1em;
+}
+
+.container{
+  	width: 25rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*==================== MAIN IMAGE ====================*/
+.main__image{
+  	margin: 1rem auto;
+  	width: 20rem;
+}
+
+.home__description{
+  	margin: 1rem auto;
+  	width: 20rem;
+    height: auto;    
+}
+
+.home__description a{
+	font-size: 1rem;
+}
+
+
+.about__description{
+  	margin: 1rem auto;
+  	width: 20rem;
+}
+
+.about__description a{
+	font-size: 1rem;
+}
+
+.gridrow{
+	width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.gridcolumn {
+  flex: 50%;
+  width: 33.3%;
+  padding: 5px;
+}
+
+.gridcolumn img{
+	width: 90%;
+	vertical-align: middle;
+}
+
+.responsive{
+	width: 322px;
+	height: 300px;
+}
+
+.facebook{
+	width: 322px;
+	height: 658px;
+}
+
+
+/*==================== FOOTER ====================*/
+
+.socials p{
+	display: inline-block;
+	text-align: center;
+	white-space: pre-wrap;
+	margin-left: auto;
+}
+.socials a{
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8rem;
+	text-decoration: none;
+	padding: 25px 0px;
+	color: #6d6c6b;
+}
+
+.pagedivider {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: #6d6c6b66;
+}
+
+.pagedividersmall {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6d6c6b66;
+}
+
+}
 
 
