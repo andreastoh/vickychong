@@ -234,6 +234,23 @@ button{
   display: table;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.gridcolumn2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.gridcolumn2 img{
+	width: 100%;
+}
+
+/* Clear floats after image containers */
+.gridrow2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*==================== FOOTER ====================*/
 
@@ -355,6 +372,26 @@ button{
 }
 
 .gridcolumn img{
+	width: 90%;
+	vertical-align: middle;
+}
+
+.gridrow2{
+	width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.gridcolumn2 {
+  flex: 50%;
+  width: 50%;
+  padding: 5px;
+}
+
+.gridcolumn2 img{
 	width: 90%;
 	vertical-align: middle;
 }
