@@ -83,11 +83,14 @@
 	right: 0;
 }
 
-.headings2 {
+.headings2 a{
 	font-family: 'Lato', sans-serif;
 	text-decoration: bold;
 	font-size: 1.3rem;
 	color: #6d6c6b;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
 /*==================== BUTTONS ====================*/
