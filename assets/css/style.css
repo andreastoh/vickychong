@@ -83,6 +83,12 @@
 	right: 0;
 }
 
+.past_events {
+	font-family: 'Lato', sans-serif;
+	text-decoration: bold;
+	font-size: 1.3rem;
+	color: #6d6c6b;
+}
 
 /*==================== BUTTONS ====================*/
 
