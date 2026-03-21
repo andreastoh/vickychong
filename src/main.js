@@ -125,7 +125,7 @@ function Modal() {
 
   return `
     <div class="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-on-surface/40 backdrop-blur fade-in" id="modal-overlay"></div>
+      <div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm fade-in" id="modal-overlay"></div>
       <div class="relative w-full max-w-2xl bg-surface p-8 md:p-12 shadow-2xl overflow-hidden slide-up">
         <button id="modal-close" class="absolute top-6 right-6 text-on-surface-variant hover:text-primary transition-colors">
           ${icon('X')}
@@ -211,7 +211,7 @@ function HomePage() {
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div class="relative">
               <div class="aspect-square bg-surface-container-high overflow-hidden">
-                <img src="${vickyPortrait}" alt="Vicky Chong Portrait" class="w-full h-full object-cover hover:scale-105 transition-all duration-700" />
+                <img src="${vickyPortrait}" alt="Vicky Chong Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
               </div>
             </div>
             <div class="space-y-6">
@@ -497,7 +497,7 @@ function EventsPage() {
       <section class="max-w-7xl mx-auto px-8 mb-32">
         <div class="relative bg-surface-container-high p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center">
           <div class="w-full md:w-1/2 aspect-[4/5] relative overflow-hidden group">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFDwpG1vWFyc1qlW9VUICmGs6o4drhsHl2myM-WKm01gLzeBnz-UpPpYVGz1Ja4RCNlRnmQSgMbRUj4G7eLqUQKW2fw9KSf3N235btpTaHpeusXc61YqebDc2w573xIJb9iF1ci-OcC3_9pX2Eeothvm3FncT30Q8-1TKsHX6GIYAW9CZ5jNVcu7CkGryAesOfjwlxtedM3mm-BXsftHtT-_EZ1VQ-0R1eTHW-e-bEHZNRp7TiMoXgC3GD3AIuWyp11_O3xuRytIiC" alt="Literary event space" class="w-full h-full object-cover hover:scale-105 transition-all duration-700" referrerPolicy="no-referrer" />
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFDwpG1vWFyc1qlW9VUICmGs6o4drhsHl2myM-WKm01gLzeBnz-UpPpYVGz1Ja4RCNlRnmQSgMbRUj4G7eLqUQKW2fw9KSf3N235btpTaHpeusXc61YqebDc2w573xIJb9iF1ci-OcC3_9pX2Eeothvm3FncT30Q8-1TKsHX6GIYAW9CZ5jNVcu7CkGryAesOfjwlxtedM3mm-BXsftHtT-_EZ1VQ-0R1eTHW-e-bEHZNRp7TiMoXgC3GD3AIuWyp11_O3xuRytIiC" alt="Literary event space" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
             <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 font-label font-semibold tracking-widest uppercase text-xs">
               Next Appearance
             </div>
@@ -662,7 +662,7 @@ function AboutPage() {
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           <div class="md:col-span-5 relative">
             <div class="absolute -top-4 -left-4 w-full h-full bg-surface-container-high -z-10"></div>
-            <img src="${vickyPortrait}" alt="Author Portrait" class="w-full transition-all duration-700 shadow-xl" />
+            <img src="${vickyPortrait}" alt="Author Portrait" class="w-full grayscale hover:grayscale-0 transition-all duration-700 shadow-xl" />
           </div>
           <div class="md:col-span-7">
             <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">The Voice Behind The Words</span>

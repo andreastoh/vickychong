@@ -1,19 +1,18 @@
-// Asset paths (relative to index.html)
-const racketImage = 'src/img/racket.png';
-const starsImage = 'src/img/aviewofstars.png';
-const sampan1Image = 'src/img/sampan1.png';
-const sampan2Image = 'src/img/sampan2.png';
-const sampan3Image = 'src/img/sampan3.png';
-const sampan4Image = 'src/img/sampan4.png';
-const tbass2021Image = 'src/img/tbass2021.png';
-const tbass2022Image = 'src/img/tbass2022.png';
-const letterImage = 'src/img/lettertomyson.png';
+import racketImage from './img/racket.png';
+import starsImage from './img/aviewofstars.png';
+import sampan1Image from './img/sampan1.png';
+import sampan2Image from './img/sampan2.png';
+import sampan3Image from './img/sampan3.png';
+import sampan4Image from './img/sampan4.png';
+import tbass2021Image from './img/tbass2021.png';
+import tbass2022Image from './img/tbass2022.png';
+import letterImage from './img/lettertomyson.png';
 
-const sampan1Pdf = 'src/pdf/SAMPAN_1_2022.pdf';
-const sampan2Pdf = 'src/pdf/SAMPAN_2_2023.pdf';
-const sampan3Pdf = 'src/pdf/SAMPAN_3_2024.pdf';
-const sampan4Pdf = 'src/pdf/SAMPAN_4_2026.pdf';
-const mongolicaPdf = 'src/pdf/mongolica.pdf';
+import sampan1Pdf from './pdf/SAMPAN_1_2022.pdf';
+import sampan2Pdf from './pdf/SAMPAN_2_2023.pdf';
+import sampan3Pdf from './pdf/SAMPAN_3_2024.pdf';
+import sampan4Pdf from './pdf/SAMPAN_4_2026.pdf';
+import mongolicaPdf from './pdf/mongolica.pdf';
 
 export const BOOKS = [
   {
