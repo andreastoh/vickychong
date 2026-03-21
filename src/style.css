@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-label: "Work Sans", sans-serif;
+
+  --color-primary: #a23900;
+  --color-primary-container: #cb4a00;
+  --color-surface: #fbf9f8;
+  --color-surface-container: #f0eded;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-high: #eae8e7;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #5a4138;
+  --color-outline-variant: #e2bfb3;
+  --color-secondary: #5a4138;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.book-shadow {
+  box-shadow: 
+    5px 5px 15px rgba(0, 0, 0, 0.1),
+    15px 15px 35px rgba(90, 65, 56, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.glass-nav {
+  @apply bg-surface/80 backdrop-blur-md;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(#e2bfb3 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-surface-container;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/40;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
