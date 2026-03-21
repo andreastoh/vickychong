@@ -1,9 +1,9 @@
+import './style.css';
+import vickyPortrait from './img/vicky.png';
 import { BOOKS, ESSAYS, EVENTS, PAST_ENGAGEMENTS, ACHIEVEMENTS, MEDIA } from './data.js';
 
-const vickyPortrait = 'src/img/vicky.png';
-
 // Router state
-let currentPath = window.location.hash || '#/';
+let currentPath = window.location.pathname;
 
 // Modal state
 let selectedBook = null;
@@ -33,13 +33,13 @@ function icon(name) {
 // Navigation
 function navigate(path) {
   currentPath = path;
-  window.location.hash = path;
+  window.history.pushState({}, '', path);
   render();
   window.scrollTo(0, 0);
 }
 
-window.onhashchange = () => {
-  currentPath = window.location.hash || '#/';
+window.onpopstate = () => {
+  currentPath = window.location.pathname;
   render();
 };
 
@@ -57,10 +57,10 @@ function closeModal() {
 // Components
 function Navbar() {
   const navLinks = [
-    { name: 'Books', path: '#/books' },
-    { name: 'Events', path: '#/events' },
-    { name: 'Media', path: '#/media' },
-    { name: 'About', path: '#/about' },
+    { name: 'Books', path: '/books' },
+    { name: 'Events', path: '/events' },
+    { name: 'Media', path: '/media' },
+    { name: 'About', path: '/about' },
   ];
 
   const isMobileMenuOpen = document.getElementById('mobile-menu')?.classList.contains('hidden') === false;
@@ -68,7 +68,7 @@ function Navbar() {
   return `
     <nav class="fixed top-0 w-full z-50 glass-nav transition-colors duration-300 border-b border-outline-variant/10">
       <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-        <a href="#/" class="font-headline italic text-2xl font-bold text-on-surface tracking-tight nav-link hover:text-primary transition-colors duration-300" data-path="#/">
+        <a href="/" class="font-headline italic text-2xl font-bold text-on-surface tracking-tight nav-link hover:text-primary transition-colors duration-300" data-path="/">
           Vicky Chong
         </a>
 
@@ -101,7 +101,7 @@ function Footer() {
     <footer class="bg-surface-container-low py-16 px-12 border-t border-outline-variant/10">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="text-center md:text-left">
-          <a href="#/" class="font-headline text-2xl italic font-bold text-on-surface block mb-2 nav-link hover:text-primary transition-colors duration-300" data-path="#/">
+          <a href="/" class="font-headline text-2xl italic font-bold text-on-surface block mb-2 nav-link hover:text-primary transition-colors duration-300" data-path="/">
             Vicky Chong
           </a>
           <p class="font-body text-sm text-on-surface-variant uppercase tracking-widest">
@@ -110,10 +110,10 @@ function Footer() {
         </div>
 
         <div class="flex flex-wrap justify-center md:justify-end gap-8 font-label text-sm tracking-wide uppercase">
-          <a href="#/books" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="#/books">Books</a>
-          <a href="#/events" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="#/events">Events</a>
-          <a href="#/media" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="#/media">Media</a>
-          <a href="#/about" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="#/about">About</a>
+          <a href="/books" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/books">Books</a>
+          <a href="/events" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/events">Events</a>
+          <a href="/media" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/media">Media</a>
+          <a href="/about" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/about">About</a>
         </div>
       </div>
     </footer>
@@ -125,7 +125,7 @@ function Modal() {
 
   return `
     <div class="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      <div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm fade-in" id="modal-overlay"></div>
+      <div class="absolute inset-0 bg-on-surface/40 backdrop-blur fade-in" id="modal-overlay"></div>
       <div class="relative w-full max-w-2xl bg-surface p-8 md:p-12 shadow-2xl overflow-hidden slide-up">
         <button id="modal-close" class="absolute top-6 right-6 text-on-surface-variant hover:text-primary transition-colors">
           ${icon('X')}
@@ -223,7 +223,7 @@ function HomePage() {
               <p class="font-body text-lg text-on-surface-variant leading-relaxed">
                 With multiple short stories published in international journals and a burgeoning collection of novels, Vicky continues to explore the intersections of tradition and modernity through the lens of the everyday.
               </p>
-              <a href="#/about" class="inline-flex items-center gap-2 font-label text-sm uppercase tracking-widest text-primary font-bold group nav-link" data-path="#/about">
+              <a href="/about" class="inline-flex items-center gap-2 font-label text-sm uppercase tracking-widest text-primary font-bold group nav-link" data-path="/about">
                 Full Biography <span class="group-hover:translate-x-1 transition-transform">${icon('ArrowRight')}</span>
               </a>
             </div>
@@ -238,7 +238,7 @@ function HomePage() {
               <span class="font-label text-sm uppercase tracking-[0.2em] text-primary font-semibold">Curated Collection</span>
               <h2 class="font-headline text-4xl font-bold text-on-surface">Latest Works & Short Stories</h2>
             </div>
-            <a href="#/books" class="font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-1 border-b border-outline-variant/30 nav-link" data-path="#/books">
+            <a href="/books" class="font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-1 border-b border-outline-variant/30 nav-link" data-path="/books">
               View All Publications
             </a>
           </div>
@@ -292,7 +292,7 @@ function HomePage() {
               <span class="font-label text-sm uppercase tracking-[0.2em] text-primary font-semibold">Media & Press</span>
               <h2 class="font-headline text-4xl font-bold text-on-surface">Featured Showcases</h2>
             </div>
-            <a href="#/media" class="font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-1 border-b border-outline-variant/30 nav-link" data-path="#/media">
+            <a href="/media" class="font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors pb-1 border-b border-outline-variant/30 nav-link" data-path="/media">
               All Media Appearances
             </a>
           </div>
@@ -325,8 +325,7 @@ function HomePage() {
 
 function BooksPage() {
   // Simple filter logic
-  const hashParts = window.location.hash.split('?');
-  const urlParams = new URLSearchParams(hashParts[1] || '');
+  const urlParams = new URLSearchParams(window.location.search);
   const filter = urlParams.get('filter') || 'All Works';
   const categories = ['All Works', 'Fiction', 'Essays', 'Anthologies'];
 
@@ -737,20 +736,19 @@ function render() {
   let content = '';
 
   switch (currentPath) {
-    case '#/':
-    case '':
+    case '/':
       content = HomePage();
       break;
-    case '#/books':
+    case '/books':
       content = BooksPage();
       break;
-    case '#/events':
+    case '/events':
       content = EventsPage();
       break;
-    case '#/media':
+    case '/media':
       content = MediaPage();
       break;
-    case '#/about':
+    case '/about':
       content = AboutPage();
       break;
     default:
@@ -813,9 +811,10 @@ function attachEventListeners() {
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.onclick = () => {
       const filter = btn.getAttribute('data-filter');
-      const hash = window.location.hash.split('?')[0];
-      window.location.hash = `${hash}?filter=${filter}`;
-      currentPath = window.location.hash;
+      const url = new URL(window.location);
+      url.searchParams.set('filter', filter);
+      window.history.pushState({}, '', url);
+      currentPath = window.location.pathname;
       render();
     };
   });
