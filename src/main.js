@@ -3,7 +3,10 @@ import vickyPortrait from './img/vicky.png';
 import { BOOKS, ESSAYS, EVENTS, PAST_ENGAGEMENTS, ACHIEVEMENTS, MEDIA } from './data.js';
 
 // Router state
-let currentPath = window.location.pathname;
+let currentPath = window.location.hash.slice(1) || '/';
+
+// Mobile menu state
+let isMobileMenuOpen = false;
 
 // Modal state
 let selectedBook = null;
@@ -33,13 +36,14 @@ function icon(name) {
 // Navigation
 function navigate(path) {
   currentPath = path;
-  window.history.pushState({}, '', path);
+  window.location.hash = path;
+  isMobileMenuOpen = false; // Close mobile menu on navigation
   render();
   window.scrollTo(0, 0);
 }
 
-window.onpopstate = () => {
-  currentPath = window.location.pathname;
+window.onhashchange = () => {
+  currentPath = window.location.hash.slice(1) || '/';
   render();
 };
 
@@ -63,18 +67,16 @@ function Navbar() {
     { name: 'About', path: '/about' },
   ];
 
-  const isMobileMenuOpen = document.getElementById('mobile-menu')?.classList.contains('hidden') === false;
-
   return `
     <nav class="fixed top-0 w-full z-50 glass-nav transition-colors duration-300 border-b border-outline-variant/10">
       <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-        <a href="/" class="font-headline italic text-2xl font-bold text-on-surface tracking-tight nav-link hover:text-primary transition-colors duration-300" data-path="/">
+        <a href="#/" class="font-headline italic text-2xl font-bold text-on-surface tracking-tight nav-link hover:text-primary transition-colors duration-300" data-path="/">
           Vicky Chong
         </a>
 
         <div class="hidden md:flex items-center space-x-8">
           ${navLinks.map(link => `
-            <a href="${link.path}" class="font-headline text-lg tracking-tight transition-colors hover:text-primary nav-link ${currentPath === link.path ? 'text-primary border-b-2 border-primary pb-1' : 'text-on-surface-variant'}" data-path="${link.path}">
+            <a href="#${link.path}" class="font-headline text-lg tracking-tight transition-colors hover:text-primary nav-link ${currentPath === link.path ? 'text-primary border-b-2 border-primary pb-1' : 'text-on-surface-variant'}" data-path="${link.path}">
               ${link.name}
             </a>
           `).join('')}
@@ -85,9 +87,9 @@ function Navbar() {
         </button>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/10 px-8 py-6 space-y-4">
+      <div id="mobile-menu" class="${isMobileMenuOpen ? '' : 'hidden'} md:hidden bg-surface border-b border-outline-variant/10 px-8 py-6 space-y-4">
         ${navLinks.map(link => `
-          <a href="${link.path}" class="block font-headline text-xl nav-link ${currentPath === link.path ? 'text-primary' : 'text-on-surface-variant'}" data-path="${link.path}">
+          <a href="#${link.path}" class="block font-headline text-xl nav-link ${currentPath === link.path ? 'text-primary' : 'text-on-surface-variant'}" data-path="${link.path}">
             ${link.name}
           </a>
         `).join('')}
@@ -101,7 +103,7 @@ function Footer() {
     <footer class="bg-surface-container-low py-16 px-12 border-t border-outline-variant/10">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div class="text-center md:text-left">
-          <a href="/" class="font-headline text-2xl italic font-bold text-on-surface block mb-2 nav-link hover:text-primary transition-colors duration-300" data-path="/">
+          <a href="#/" class="font-headline text-2xl italic font-bold text-on-surface block mb-2 nav-link hover:text-primary transition-colors duration-300" data-path="/">
             Vicky Chong
           </a>
           <p class="font-body text-sm text-on-surface-variant uppercase tracking-widest">
@@ -110,10 +112,10 @@ function Footer() {
         </div>
 
         <div class="flex flex-wrap justify-center md:justify-end gap-8 font-label text-sm tracking-wide uppercase">
-          <a href="/books" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/books">Books</a>
-          <a href="/events" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/events">Events</a>
-          <a href="/media" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/media">Media</a>
-          <a href="/about" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/about">About</a>
+          <a href="#/books" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/books">Books</a>
+          <a href="#/events" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/events">Events</a>
+          <a href="#/media" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/media">Media</a>
+          <a href="#/about" class="text-on-surface-variant hover:text-primary transition-colors nav-link" data-path="/about">About</a>
         </div>
       </div>
     </footer>
@@ -781,11 +783,10 @@ function attachEventListeners() {
 
   // Mobile menu toggle
   const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (mobileMenuToggle && mobileMenu) {
+  if (mobileMenuToggle) {
     mobileMenuToggle.onclick = () => {
-      mobileMenu.classList.toggle('hidden');
-      render(); // Re-render to update icon
+      isMobileMenuOpen = !isMobileMenuOpen;
+      render();
     };
   }
 
