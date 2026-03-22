@@ -7,6 +7,8 @@ import sampan4Image from './img/sampan4.png';
 import tbass2021Image from './img/tbass2021.png';
 import tbass2022Image from './img/tbass2022.png';
 import letterImage from './img/lettertomyson.png';
+import modernloveImage from './img/modernlove.jpeg';
+import pioneerImage from './img/pioneer.jpeg';
 
 import sampan1Pdf from './pdf/SAMPAN_1_2022.pdf';
 import sampan2Pdf from './pdf/SAMPAN_2_2023.pdf';
@@ -149,13 +151,13 @@ export const ESSAYS = [
     id: 'e1',
     title: 'The Sunday Times: Modern Love',
     description: 'How do I love thee? A compilation of stories for Valentine\'s Day',
-    readUrl: './src/img/modernlove.jpeg',
+    readUrl: modernloveImage,
   },
   {
     id: 'e2',
     title: 'The Day My Son Wrote Me A Letter',
     description: 'A journal entry in PIONEER magazine, the official magazine of the Singapore Armed Forces (SAF) and the Ministry of Defence (MINDEF).',
-    readUrl: './src/img/pioneer.jpeg',
+    readUrl: pioneerImage,
   }
 ];
 
