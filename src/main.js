@@ -236,7 +236,7 @@ function HomePage() {
                 Vicky Chong is a Singaporean author whose work delves into the nuances of domestic life and the historical echoes of Southeast Asia. Her narratives are celebrated for their lyrical precision and emotional depth.
               </p>
               <p class="font-body text-lg text-on-surface-variant leading-relaxed">
-                With multiple short stories published in international journals and a burgeoning collection of novels, Vicky continues to explore the intersections of tradition and modernity through the lens of the everyday.
+                With a short story collection and multiple short stories published in literary anthologies, Vicky continues to explore the intersections of tradition and modernity through the lens of the everyday.
               </p>
               <a href="/about" class="inline-flex items-center gap-2 font-label text-sm uppercase tracking-widest text-primary font-bold group nav-link" data-path="/about">
                 Full Biography <span class="group-hover:translate-x-1 transition-transform">${icon('ArrowRight')}</span>
@@ -695,15 +695,15 @@ function AboutPage() {
             <div class="flex flex-col md:flex-row gap-8 items-start">
               <h2 class="text-3xl font-headline text-primary md:w-1/3 md:sticky top-32">The Early Narrative</h2>
               <div class="md:w-2/3 text-lg leading-loose text-on-surface-variant space-y-6">
-                <p>Born into a family of voracious readers, Vicky’s journey began in the quiet corners of public libraries. Her fascination with the human condition led her to pursue a career that bridges the gap between traditional journalism and contemporary fiction.</p>
-                <p>Her work often explores the intersection of cultural heritage and modern identity, drawing inspiration from her extensive travels across Southeast Asia and her deep-seated love for the tactile nature of historical archives.</p>
+                <p>Raised in an extended family of readers, Vicky’s journey began in the quiet corners of second-hand bookshops. Her fascination with the human condition led her to pursue a career that bridges the gap between traditional journalism and contemporary fiction.</p>
+                <p>Her work often explores the intersection of cultural heritage and modern identity, drawing inspiration from her extensive travels across the globe and her deep-seated love for the human connection.</p>
               </div>
             </div>
             <div class="flex flex-col md:flex-row gap-8 items-start pt-12">
               <h2 class="text-3xl font-headline text-primary md:w-1/3 md:sticky top-32">Craft & Inspiration</h2>
               <div class="md:w-2/3 text-lg leading-loose text-on-surface-variant space-y-6">
-                <p>Vicky's writing process is deeply anchored in the "Editorial Voice." Every manuscript starts with a fountain pen and a blank sheet of cream paper, a ritual that maintains her connection to the physical act of creation.</p>
-                <p>She draws inspiration from the works of Virginia Woolf and contemporary masters of the short form. Her narrative style is characterized by "Intentional Asymmetry," much like the design of this space—breaking standard patterns to reveal deeper truths.</p>
+                <p>Vicky's writing process is deeply anchored in the "Editorial Voice."</p>
+                <p>She draws inspiration from the works of the late Irish writer Maeve Binchy and contemporary masters of the short form like Alice Munro. Her narrative style is characterized by "Intentional Asymmetry," much like the design of this space—breaking standard patterns to reveal deeper truths.</p>
               </div>
             </div>
           </div>
