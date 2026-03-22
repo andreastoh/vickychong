@@ -365,8 +365,8 @@ function BooksPage() {
       </header>
 
       <section class="bg-surface-container-low py-6 mb-16">
-        <div class="max-w-7xl mx-auto px-8 flex gap-8 items-center overflow-x-auto whitespace-nowrap scrollbar-hide">
-          <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Filter By:</span>
+        <div class="max-w-7xl mx-auto px-8 flex flex-wrap gap-x-6 gap-y-4 items-center">
+          <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant w-full md:w-auto">Filter By:</span>
           ${categories.map(cat => `
             <button class="font-label text-sm transition-colors filter-btn ${filter === cat ? 'font-semibold text-primary' : 'text-on-surface-variant hover:text-on-surface'}" data-filter="${cat}">
               ${cat}
@@ -624,8 +624,8 @@ function MediaPage() {
       </header>
 
       <section class="bg-surface-container-low py-6 mb-16">
-        <div class="max-w-7xl mx-auto px-8 flex gap-8 items-center overflow-x-auto whitespace-nowrap scrollbar-hide">
-          <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Filter By:</span>
+        <div class="max-w-7xl mx-auto px-8 flex flex-wrap gap-x-6 gap-y-4 items-center">
+          <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant w-full md:w-auto">Filter By:</span>
           ${categories.map(cat => `
             <button class="font-label text-sm transition-colors filter-btn ${filter === cat ? 'font-semibold text-primary' : 'text-on-surface-variant hover:text-on-surface'}" data-filter="${cat}">
               ${cat}
