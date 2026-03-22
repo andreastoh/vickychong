@@ -35,17 +35,30 @@ function icon(name) {
 
 // Navigation
 function navigate(path) {
+  const url = new URL(window.location);
+  const hasFilter = url.searchParams.has('filter');
+  
+  if (currentPath === path && !hasFilter) {
+    isMobileMenuOpen = false;
+    render();
+    window.scrollTo(0, 0);
+    return;
+  }
+
   currentPath = path;
-  window.location.hash = path;
+  url.searchParams.delete('filter');
+  url.hash = path;
+  window.history.pushState({}, '', url);
+  
   isMobileMenuOpen = false; // Close mobile menu on navigation
   render();
   window.scrollTo(0, 0);
 }
 
-window.onhashchange = () => {
+window.addEventListener('popstate', () => {
   currentPath = window.location.hash.slice(1) || '/';
   render();
-};
+});
 
 // Modal functions
 function openModal(book) {
