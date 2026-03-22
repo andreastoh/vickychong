@@ -538,14 +538,14 @@
         <div class="max-w-4xl mx-auto px-8">
           <div class="space-y-12">
             <div class="flex flex-col md:flex-row gap-8 items-start">
-              <h2 class="text-3xl font-headline text-primary md:w-1/3 sticky top-32">The Early Narrative</h2>
+              <h2 class="text-3xl font-headline text-primary md:w-1/3 md:sticky top-32">The Early Narrative</h2>
               <div class="md:w-2/3 text-lg leading-loose text-on-surface-variant space-y-6">
                 <p>Born into a family of voracious readers, Vicky’s journey began in the quiet corners of public libraries. Her fascination with the human condition led her to pursue a career that bridges the gap between traditional journalism and contemporary fiction.</p>
                 <p>Her work often explores the intersection of cultural heritage and modern identity, drawing inspiration from her extensive travels across Southeast Asia and her deep-seated love for the tactile nature of historical archives.</p>
               </div>
             </div>
             <div class="flex flex-col md:flex-row gap-8 items-start pt-12">
-              <h2 class="text-3xl font-headline text-primary md:w-1/3 sticky top-32">Craft & Inspiration</h2>
+              <h2 class="text-3xl font-headline text-primary md:w-1/3 md:sticky top-32">Craft & Inspiration</h2>
               <div class="md:w-2/3 text-lg leading-loose text-on-surface-variant space-y-6">
                 <p>Vicky's writing process is deeply anchored in the "Editorial Voice." Every manuscript starts with a fountain pen and a blank sheet of cream paper, a ritual that maintains her connection to the physical act of creation.</p>
                 <p>She draws inspiration from the works of Virginia Woolf and contemporary masters of the short form. Her narrative style is characterized by "Intentional Asymmetry," much like the design of this space—breaking standard patterns to reveal deeper truths.</p>
@@ -596,4 +596,4 @@
       ${_()}
       ${H()}
     </div>
-  `,J()}function J(){document.querySelectorAll(".nav-link").forEach(o=>{o.onclick=e=>{e.preventDefault(),F(o.getAttribute("data-path"))}});const r=document.getElementById("mobile-menu-toggle");r&&(r.onclick=()=>{f=!f,c()}),document.querySelectorAll(".excerpt-btn").forEach(o=>{o.onclick=()=>{const e=o.getAttribute("data-id"),i=h.find(t=>t.id===e)||y.find(t=>t.id===e);i&&O(i)}});const a=document.getElementById("modal-close"),s=document.getElementById("modal-close-btn"),l=document.getElementById("modal-overlay");a&&(a.onclick=m),s&&(s.onclick=m),l&&(l.onclick=m),document.querySelectorAll(".filter-btn").forEach(o=>{o.onclick=()=>{const e=o.getAttribute("data-filter"),i=new URL(window.location);i.searchParams.set("filter",e),window.history.pushState({},"",i),p=window.location.pathname,c()}})}c();
+  `,J()}function J(){document.querySelectorAll(".nav-link").forEach(o=>{o.onclick=e=>{e.preventDefault(),F(o.getAttribute("data-path"))}});const r=document.getElementById("mobile-menu-toggle");r&&(r.onclick=()=>{f=!f,c()}),document.querySelectorAll(".excerpt-btn").forEach(o=>{o.onclick=()=>{const e=o.getAttribute("data-id"),i=h.find(t=>t.id===e)||y.find(t=>t.id===e);i&&O(i)}});const a=document.getElementById("modal-close"),s=document.getElementById("modal-close-btn"),l=document.getElementById("modal-overlay");a&&(a.onclick=m),s&&(s.onclick=m),l&&(l.onclick=m),document.querySelectorAll(".filter-btn").forEach(o=>{o.onclick=()=>{const e=o.getAttribute("data-filter"),i=new URL(window.location);i.searchParams.set("filter",e),window.history.pushState({},"",i),p=window.location.hash.slice(1)||"/",c()}})}c();
