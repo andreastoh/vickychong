@@ -37,7 +37,6 @@ export const BOOKS = [
     year: '2020',
     purchaseUrl: 'https://www.goodreads.com/book/show/54735936-a-view-of-stars',
     excerpt: "I miss holding your hands when I sleep."
-"
   },
   {
     id: '3',
@@ -78,7 +77,6 @@ export const BOOKS = [
     year: '2024',
     readUrl: sampan3Pdf,
     excerpt: "'Don't get too attached to Silver,' my son warned, and I assured him I wouldn't, because I had better things to do than be bothered by a pet."
-"
   },
   {
     id: '7',
