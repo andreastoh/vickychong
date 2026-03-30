@@ -26,7 +26,7 @@ export const BOOKS = [
     year: '2021',
     featured: true,
     purchaseUrl: 'https://www.amazon.com/Racket-Other-Stories-Vicky-Chong-ebook/dp/B099RTTB78',
-    excerpt: "The morning mist clung to the surface of the reservoir like a forgotten promise. In the quiet before the city's awakening, the blue rose in the garden seemed to glow with an ethereal light, its petals holding the secrets of a lineage that refused to be forgotten. 'It's not just a flower,' her grandmother had whispered, 'it's a map of where we've been and a compass for where we must go.'"
+    excerpt: "He took the barrette out of the plastic wrapper, moved towards me and clipped the barrette just behind my right year. I winced slightly as some hair got pulled in the process, but otherwise stsyed as still as possible."
   },
   {
     id: '2',
@@ -36,7 +36,8 @@ export const BOOKS = [
     category: 'Anthology',
     year: '2020',
     purchaseUrl: 'https://www.goodreads.com/book/show/54735936-a-view-of-stars',
-    excerpt: "Rain lashed against the window of the small cafe in Tiong Bahru. Inside, the steam from two cups of coffee rose in parallel columns, never quite touching. They sat in a silence that was heavy with the things they hadn't said over the last decade. Outside, the world was a blur of grey and neon, but in here, time had slowed to the rhythm of a leaking faucet."
+    excerpt: "I miss holding your hands when I sleep."
+"
   },
   {
     id: '3',
@@ -56,7 +57,7 @@ export const BOOKS = [
     category: 'Anthology',
     year: '2022',
     readUrl: sampan1Pdf,
-    excerpt: "Sue flounces back to the table. ‘Just so you know, we’re not doing IVF purely because of my age. Your son has a low sperm count, probably from sitting for long hours gaming. Lester didn’t want to continue the IVF, and I agreed because, frankly, I cannot imagine myself being a mother to him as well as his children, on top of being the breadwinner.’ She stretches out her hand to Lester. ‘Give me the car key. I need to be alone.’"
+    excerpt: "'Not everyone wants to be married, you know.' She turns towards the kitchen and says in a voice loud enough for the neighbours to hear, 'and not every woman wants to be a mother.'"
   },
   {
     id: '5',
@@ -66,7 +67,7 @@ export const BOOKS = [
     category: 'Anthology',
     year: '2023',
     readUrl: sampan2Pdf,
-    excerpt: "The door to the studio was ajar, casting a shaft of light onto the dull concrete floor of the dim corridor. Sara lightened her footsteps as she stepped out of the lift. There was silence in the industrial building, which usually buzzed with noisy activities, even on weekends. The building housed printing companies, light manufacturers and storage facilities."
+    excerpt: "The volatile mixture of oil paints and mineral spirit, mixed with his sweaty pheromone on a warm humid day, made a perfect aphrodisiac for women."
   },
   {
     id: '6',
@@ -76,7 +77,8 @@ export const BOOKS = [
     category: 'Anthology',
     year: '2024',
     readUrl: sampan3Pdf,
-    excerpt: "This text message in my neighbourhood group chat was a change from the usual laments about parking woes and wrongly delivered parcels. Instead, it was a photo of a cat chilling on a garden wall ledge with the caption 'Whose cat is this in my garden?'"
+    excerpt: "'Don't get too attached to Silver,' my son warned, and I assured him I wouldn't, because I had better things to do than be bothered by a pet."
+"
   },
   {
     id: '7',
@@ -86,7 +88,7 @@ export const BOOKS = [
     category: 'Anthology',
     year: '2026',
     readUrl: sampan4Pdf,
-    excerpt: "The soft hum of the air-conditioning penetrated her consciousness. Meredith rubbed the goosebumps on her bare arms, and suddenly awoke from the chill. A white sculpture of Jesus on the cross stared down at her. Dark-stained wooden panels on the arched ceiling contrasted with the whitewashed walls on both sides of the hall, intermittently flanked by glass doors leading to a courtyard on the left and a garden on the right. For a moment, she forgot where she was."
+    excerpt: "Where would Meredith go when she dies? Who cares? Not her. She was not afraid of death, but did fear loneliness, old age and sickness."
   },
   {
     id: '8',
