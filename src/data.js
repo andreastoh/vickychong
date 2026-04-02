@@ -40,13 +40,13 @@ export const BOOKS = [
   },
   {
     id: '3',
-    title: 'Letter To My Son',
+    title: 'Letter To My Son: Marriage Lessons',
     description: 'Every boy goes through several rites of passage as he grows up to become a man. He learns from siblings, peers, teachers and other adults. But perhaps no one has as much influence over him as his parents. This is not surprising as they look after their son from a young age and build bonds of trust and love.',
     coverImage: letterImage,
     category: 'Anthology',
     purchaseUrl: 'https://www.goodreads.com/book/show/55759643-letter-to-my-son',
     year: '2020',
-    excerpt: "The soil here remembers. It remembers the sweat of my father's brow and the laughter of my sisters as we chased dragonflies between the rows of bitter gourd. Now, as I kneel in the same earth, I realize that we aren't just planting seeds; we are burying our sorrows and waiting for them to bloom into something we can finally understand."
+    excerpt: "Your father is not the most romantic man in the world, but he is the best partner a woman could have asked for."
   },
   {
     id: '4',
