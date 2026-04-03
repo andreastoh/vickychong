@@ -90,23 +90,23 @@ export const BOOKS = [
   },
   {
     id: '8',
-    title: 'The Best Asian Short Stories 2021',
+    title: 'The Best Asian Short Stories 2021: Safe Distancing Ambassador',
     description: 'The fourth issue of SAMPAN, LASALLE College of the Arts, University of the Arts Singapore’s creative writing anthology, adopts ‘Home’ as its theme in response to Singapore’s 60th anniversary. In this reading session, students and contributors to the anthology share works that touch on what home means to them.',
     coverImage: tbass2021Image,
     category: 'Anthology',
     year: '2021',
     purchaseUrl: 'https://www.goodreads.com/book/show/59509363-the-best-asian-short-stories-2021',
-    excerpt: "The soft hum of the air-conditioning penetrated her consciousness. Meredith rubbed the goosebumps on her bare arms, and suddenly awoke from the chill. A white sculpture of Jesus on the cross stared down at her. Dark-stained wooden panels on the arched ceiling contrasted with the whitewashed walls on both sides of the hall, intermittently flanked by glass doors leading to a courtyard on the left and a garden on the right. For a moment, she forgot where she was."
+    excerpt: "Safe Distancing Ambassador was not a career choice for many until two months ago. Laid off from their job due to the pandemic, they were hired recently for this role."
   },
   {
     id: '9',
-    title: 'The Best Asian Short Stories 2022',
+    title: 'The Best Asian Short Stories 2022: Transplanted Love',
     description: 'The fourth issue of SAMPAN, LASALLE College of the Arts, University of the Arts Singapore’s creative writing anthology, adopts ‘Home’ as its theme in response to Singapore’s 60th anniversary. In this reading session, students and contributors to the anthology share works that touch on what home means to them.',
     coverImage: tbass2022Image,
     category: 'Anthology',
     year: '2022',
     purchaseUrl: 'https://www.goodreads.com/book/show/65067216-the-best-asian-short-stories-2022',
-    excerpt: "The soft hum of the air-conditioning penetrated her consciousness. Meredith rubbed the goosebumps on her bare arms, and suddenly awoke from the chill. A white sculpture of Jesus on the cross stared down at her. Dark-stained wooden panels on the arched ceiling contrasted with the whitewashed walls on both sides of the hall, intermittently flanked by glass doors leading to a courtyard on the left and a garden on the right. For a moment, she forgot where she was."
+    excerpt: "There was a sense of familiarity with Lydia that disturbed Marc. She reminded Marc of someone."
   },
   {
     id: '10',
