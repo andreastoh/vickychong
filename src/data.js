@@ -6,6 +6,7 @@ import sampan3Image from './img/sampan3.png';
 import sampan4Image from './img/sampan4.png';
 import tbass2021Image from './img/tbass2021.png';
 import tbass2022Image from './img/tbass2022.png';
+import tbass2023Image from './img/tbass2023.png';
 import letterImage from './img/lettertomyson.png';
 import modernloveImage from './img/modernlove.jpeg';
 import pioneerImage from './img/pioneer.jpeg';
@@ -91,7 +92,7 @@ export const BOOKS = [
   {
     id: '8',
     title: 'The Best Asian Short Stories 2021: Safe Distancing Ambassador',
-    description: 'The fourth issue of SAMPAN, LASALLE College of the Arts, University of the Arts Singapore’s creative writing anthology, adopts ‘Home’ as its theme in response to Singapore’s 60th anniversary. In this reading session, students and contributors to the anthology share works that touch on what home means to them.',
+    description: 'The Best Asian Short Stories 2021 brings together the work of twenty Asian writers residing in Asia and other countries, namely from Canada, India, Malaysia, Japan, Singapore, Philippines, United Kingdom and United States of America. A mix of Asian writing from some familiar names and newcomers are presented in this volume. Among the writers in this collection are Cyril Wong, Sudeep Sen, Elaine Chew, Danton Remoto, Ivy Ngeow, Terence Toh, Bhaswati Gosh, Andrew Innes and Jose Varghese. The broad theme for this collection is the new normal, revolving around the Covid-19 pandemic, with the inclusion of other stories set in the Asian region. The stories on the new normal theme explore how this world-wide pandemic has impinged on private lives and the public world.',
     coverImage: tbass2021Image,
     category: 'Anthology',
     year: '2021',
@@ -101,7 +102,7 @@ export const BOOKS = [
   {
     id: '9',
     title: 'The Best Asian Short Stories 2022: Transplanted Love',
-    description: 'The fourth issue of SAMPAN, LASALLE College of the Arts, University of the Arts Singapore’s creative writing anthology, adopts ‘Home’ as its theme in response to Singapore’s 60th anniversary. In this reading session, students and contributors to the anthology share works that touch on what home means to them.',
+    description: 'The Best Asian Short Stories 2022 anthology is the 6th volume in the annual TBASS series of anthologies celebrating the Asian short story as a constantly evolving, innovative and vibrant mode of literary expression.',
     coverImage: tbass2022Image,
     category: 'Anthology',
     year: '2022',
@@ -110,6 +111,16 @@ export const BOOKS = [
   },
   {
     id: '10',
+    title: 'The Best Asian Short Stories 2023: Trust and Love',
+    description: 'Twenty-three authors have penned diverse stories set in Asia that invite you to reflect, empathize and find solace in their shared experiences.',
+    coverImage: tbass2023Image,
+    category: 'Anthology',
+    year: '2023',
+    purchaseUrl: 'https://www.amazon.sg/Best-Asian-Short-Stories-2023/dp/9811885850',
+    excerpt: "True love is simple. Don't need expensive gifts or grand gestures. Just taking off a jacket on a cold night for your beloved to lie down so she can view the stars is enough."
+  },
+  {
+    id: '11',
     title: 'Someday',
     description: 'Vicky Chong shares a heart-warming tale of love and loss with the pandemic as the backdrop.',
     category: 'Fiction',
@@ -118,7 +129,7 @@ export const BOOKS = [
     excerpt: "I wish I could turn back the clock to the night we binge-watched three movies in a row. We’d never done that before. One movie, in Korean, was the maximum you would do, and then you would bid everyone goodnight and turn in, when the blue hour was just turning a shade darker into indigo, when most Singaporeans were just sitting down for their dinners, when most windows in blocks of HDB flickered alight in synchrony, with movements of business about. Perhaps then nothing would happen. You would go to bed and wake up at 4 am as usual. And life would continue."
   },
   {
-    id: '11',
+    id: '12',
     title: 'Camel’s Tears',
     description: 'A grieving man travels the Sahara after losing his wife, confronting memories, danger, and unresolved love, ultimately finding that even in isolation, his sorrow is shared.',
     category: 'Fiction',
@@ -127,7 +138,7 @@ export const BOOKS = [
     excerpt: "THE camel eyed Tom with a weary fatigue Tom recognised, the same expression Tom had seen in the mirror every morning for the past two months before he quit his job and embarked on this year-long journey to the Sahara and Africa. The camel’s lashes lowered and Tom thought he detected the glimmer of a teardrop in one corner of its large eyes."
   },
   {
-    id: '12',
+    id: '13',
     title: 'The Uber Driver',
     description: 'A hardworking taxi driver in Singapore picks up a drunk passenger who collapses in her car. As panic sets in, she overcomes fear and takes action to save his life, revealing her quiet resilience and maternal instinct.',
     category: 'Fiction',
@@ -136,7 +147,7 @@ export const BOOKS = [
     excerpt: "Shenton Way. The financial district of Singapore where the most savvy of the population congregate. Along this expensive stretch of commercial real estate and inside one of these claustrophobic aluminium-clad towers is where Peck’s daughter, Lynn, works as a lawyer."
   },
   {
-    id: '13',
+    id: '14',
     title: 'Harvey Crescent',
     description: 'A terminally ill woman forms an unexpected bond with a stray cat, Mimi, whose presence brings her comfort and purpose. As their connection deepens, she confronts her mortality and ultimately chooses to leave her home to the cat, finding meaning and companionship in her final days.',
     category: 'Fiction',
