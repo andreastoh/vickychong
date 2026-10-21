@@ -1,13 +1,13 @@
-import racketImage from './img/racket.png';
-import starsImage from './img/aviewofstars.png';
-import sampan1Image from './img/sampan1.png';
-import sampan2Image from './img/sampan2.png';
-import sampan3Image from './img/sampan3.png';
-import sampan4Image from './img/sampan4.png';
-import tbass2021Image from './img/tbass2021.png';
-import tbass2022Image from './img/tbass2022.png';
-import tbass2023Image from './img/tbass2023.png';
-import letterImage from './img/lettertomyson.png';
+import racketImage from './img/racket.webp';
+import starsImage from './img/aviewofstars.webp';
+import sampan1Image from './img/sampan1.webp';
+import sampan2Image from './img/sampan2.webp';
+import sampan3Image from './img/sampan3.webp';
+import sampan4Image from './img/sampan4.webp';
+import tbass2021Image from './img/tbass2021.webp';
+import tbass2022Image from './img/tbass2022.webp';
+import tbass2023Image from './img/tbass2023.webp';
+import letterImage from './img/lettertomyson.webp';
 import modernloveImage from './img/modernlove.jpeg';
 import pioneerImage from './img/pioneer.jpeg';
 
@@ -27,7 +27,7 @@ export const BOOKS = [
     year: '2021',
     featured: true,
     purchaseUrl: 'https://www.amazon.com/Racket-Other-Stories-Vicky-Chong-ebook/dp/B099RTTB78',
-    excerpt: "He took the barrette out of the plastic wrapper, moved towards me and clipped the barrette just behind my right year. I winced slightly as some hair got pulled in the process, but otherwise stsyed as still as possible."
+    excerpt: "He took the barrette out of the plastic wrapper, moved towards me and clipped the barrette just behind my right ear. I winced slightly as some hair got pulled in the process, but otherwise stayed as still as possible."
   },
   {
     id: '2',
@@ -86,7 +86,9 @@ export const BOOKS = [
     coverImage: sampan4Image,
     category: 'Anthology',
     year: '2026',
-    readUrl: sampan4Pdf,
+    // TODO: src/pdf/SAMPAN_4_2026.pdf is currently empty (0 bytes). Replace it with
+    // the real PDF, then uncomment the line below to show the "Read Online" button.
+    // readUrl: sampan4Pdf,
     excerpt: "Where would Meredith go when she dies? Who cares? Not her. She was not afraid of death, but did fear loneliness, old age and sickness."
   },
   {
@@ -180,7 +182,7 @@ export const PAST_ENGAGEMENTS = [
     date: 'OCT 2023',
     title: 'Come Nightfall',
     description: 'A Celebration of Alumni and Student Publications.',
-    location: 'LASELLE, Singapore'
+    location: 'LASALLE, Singapore'
   },
   {
     id: '2',
@@ -219,7 +221,7 @@ export const MEDIA = [
   {
     id: 'm1',
     type: 'Magazine',
-    title: ' Mongolica Magazine Q1 2024',
+    title: 'Mongolica Magazine Q1 2024',
     description: '"Mongolica" magazine, available in the international and local flight services of MIAT, is a seasoned and complimentary publication with a wealth of experience dedicated to showcasing Mongolia to a global audience.',
     link: mongolicaPdf,
     date: 'JAN 2024',
@@ -278,7 +280,7 @@ export const MEDIA = [
     description: 'A conversation about her initial reservations pursuing a postgraduate degree in her fifties, the writing community she has gained from her time at LASALLE, as well as her advice for aspiring writers.',
     link: 'https://www.lasalle.edu.sg/news-and-stories/stories/conversation-vicky-chong-publishing-her-debut-collection-short-stories-2/',
     date: 'AUG 2021',
-    source: 'LASELLE',
+    source: 'LASALLE',
     icon: 'Newspaper',
     featured: false
   },
@@ -296,8 +298,8 @@ export const MEDIA = [
   {
     id: 'm8',
     type: 'Award',
-    title: ' 2023 Epigram Books Fiction Prize',
-    description: 'Epigram Books is pleased to announce the longlisted writers for the 2023 Epigram Books Fiction Prize (EBFP). The ten writers come from diverse age groups and all hail fro different backgrounds such as writing, education, dentistry, public relations, and comedy.',
+    title: '2023 Epigram Books Fiction Prize',
+    description: 'Epigram Books is pleased to announce the longlisted writers for the 2023 Epigram Books Fiction Prize (EBFP). The ten writers come from diverse age groups and all hail from different backgrounds such as writing, education, dentistry, public relations, and comedy.',
     link: 'https://www.epigram.sg/ebfp-2023',
     date: 'APR 2023',
     source: 'Epigram',
@@ -307,7 +309,7 @@ export const MEDIA = [
   {
     id: 'm9',
     type: 'Award',
-    title: ' 2018 Nick Joaquin Literary Awards',
+    title: '2018 Nick Joaquin Literary Awards',
     description: 'Four women writers flew to the Philippines to receive their trophies and prizes in the first Asia-Pacific Nick Joaquin Literary Awards held at the Winford Manila Resort and Casino on May 15.',
     link: 'https://businessmirror.com.ph/2019/05/26/njla-goes-international-the-first-asia-pacific-nick-joaquin-literary-awards/',
     date: 'MAY 2019',
@@ -318,7 +320,7 @@ export const MEDIA = [
   {
     id: 'm10',
     type: 'Article',
-    title: ' “The Best Asian Short Stories 2022” launched at Lasalle College of the Arts, Singapore',
+    title: '“The Best Asian Short Stories 2022” launched at Lasalle College of the Arts, Singapore',
     description: 'The Best Asian Short Stories 2022, published by Kitaab, was launched on 16 January 2023 at Singapore’s Lasalle College of the Arts.',
     link: 'https://kitaab.org/2023/01/17/the-best-asian-short-stories-2022-launched-at-lasalle-college-of-the-arts-singapore/',
     date: 'JAN 2023',
