@@ -86,9 +86,7 @@ export const BOOKS = [
     coverImage: sampan4Image,
     category: 'Anthology',
     year: '2026',
-    // TODO: src/pdf/SAMPAN_4_2026.pdf is currently empty (0 bytes). Replace it with
-    // the real PDF, then uncomment the line below to show the "Read Online" button.
-    // readUrl: sampan4Pdf,
+    readUrl: sampan4Pdf,
     excerpt: "Where would Meredith go when she dies? Who cares? Not her. She was not afraid of death, but did fear loneliness, old age and sickness."
   },
   {
