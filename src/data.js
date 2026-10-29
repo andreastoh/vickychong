@@ -26,6 +26,8 @@ export const BOOKS = [
     category: 'Fiction',
     year: '2021',
     featured: true,
+    isbn: '9789814914062',
+    publisher: 'Penguin Random House SEA',
     purchaseUrl: 'https://www.amazon.com/Racket-Other-Stories-Vicky-Chong-ebook/dp/B099RTTB78',
     excerpt: "He took the barrette out of the plastic wrapper, moved towards me and clipped the barrette just behind my right ear. I winced slightly as some hair got pulled in the process, but otherwise stayed as still as possible."
   },
